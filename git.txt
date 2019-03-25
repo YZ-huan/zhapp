@@ -1,0 +1,25 @@
+1. 创建远端仓库（空）
+
+2. 本地git配置
+git config --global user.name "weis"
+git config --global user.email "578402809@qq.com"
+
+
+3. 初始化一个本地仓库 。并创建空项目。
+
+1）git status    （红色文件是变更文件，  绿色是在暂存区的文件。）
+
+2) git add . 把所有变更的文件添加到暂存区。   
+
+3) git commit -m "提交的描述。"
+
+
+4. 同一个仓库，在远端和本地  保持同步
+
+1） 生成ssh  ssh-keygen -t rsa -C "youremail@example.com"    一路下一步。
+2)  在账户里添加 公钥。
+
+3) git remote add git@gitee.com:weisss1993/cbyApp.git  地址 。添加远端仓库。
+
+
+5.git push -u origin master  推送代码到origin 的master分支
